@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>#marathon_5</title>
+</head>
+
+<body>
+    <div class="site-container flex">
+        <header class="header">
+            <div class="container header__container flex">
+                <nav class="header__nav nav">
+                    <ul class="nav__list flex">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link header__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link header__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__logo logo">Camping.</div>
+                <div class="header__sign sign">
+                    <a href="#" class="sign__in header__link">Sign In</a>
+                    <a href="#" class="sign__up header__link">Sign Up</a>
+                </div>
+                <form class="header__search search" action="" method="">
+                    <input class="search__button reset-btn" type="search" value="" aria-label="Search on site">
+                </form>
+            </div>
+        </header>
+        <div class="filler"></div>
+        <main class="main flex">
+            <section class="main__places places">
+                <div class="container places__container flex">
+                    <div class="places__current current flex">
+                        <div class="current__info">
+                            <h1 class="current__heading">Beatiful Places
+                                of England</h1>
+                            <p class="current__desc">Plan your vacation on the most beatiful
+                                places of England</p>
+                        </div>
+                    </div>
+                    <a href="#" class="places__next next flex">
+                        <div class="next__info">
+                            <p class="next__desc">Up next</p>
+                            <h2 class="next__heading">Aerial View
+                                of Rock
+                                Cliffs</h2>
+                            <span class="next__link"></span>
+                        </div>
+                        <div class="next__img"></div>
+                    </a>
+                </div>
+            </section>
+            <section class="main__booking booking">
+                <div class="container booking__container flex">
+                    <h2 class="booking__heading">Book your vacation</h2>
+                    <form action="https://jsonplaceholder.typicode.com/posts" class="booking__form" id="booking__form" method="post">
+                        <ul class="booking__list flex">
+                            <li class="booking__item accomodation">
+                                <label class="booking__label" for="accomodation">Accomodation</label>
+                                <input class="booking__input reset-input" name="accomodation" type="text" id="accomodation" placeholder="6730 Luna Land North Rhiannonmouth">
+                            </li>
+                            <li class="booking__item check-in">
+                                <label class="booking__label" for="check-in">Check-in</label>
+                                <input class="booking__input reset-input" name="check-in" type="text" id="check-in" placeholder="19.06.2019">
+                            </li>
+                            <li class="booking__item check-out">
+                                <label class="booking__label" for="check-out">Check-out</label>
+                                <input class="booking__input reset-input" name="check-out" type="text" id="check-out" placeholder="19.06.2019">
+                            </li>
+                            <li class="booking__item guests">
+                                <label class="booking__label" for="check-in">Guests</label>
+                                <input class="booking__input reset-input" name="guests" type="text" id="guests" placeholder="4 adults">
+                            </li>
+                        </ul>
+                    </form>
+                    <button class="booking__search reset-btn" type="search" form="booking__form">Search</button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
